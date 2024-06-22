@@ -27,16 +27,18 @@ def get_puzzle():
     selected_puzzle = choice(avail_puzzles)
     return selected_puzzle
 
-# function to set the initial values at the start of the game done by _____
+# function to set the initial values at the start of the game done by Yunxin
 
-# function to display information on the screen in each turn done by _____
+# function to display information on the screen in each turn done by Joel
 
-# function to prompt the player to choose an option until the puzzle is solved done by _____
+# function to prompt the player to choose an option until the puzzle is solved done by Geethika
 
-# function to get the result of the spin of the wheel done by _____
+# function to get the result of the spin of the wheel done by Geethika
 
-# function to process the guess of consonant done by _____
+# function to process the guess of consonant done by Yunxin
 
-# function to process the buying and guessing of vowel done by _____
+# function to process the buying and guessing of vowel done by Joel
 
-# function to test whether the user solve the puzzle correctly done by _____
+# function to test whether the user solve the puzzle correctly done by Maggie
+
+# main body done by Maggie
