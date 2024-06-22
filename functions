@@ -1,6 +1,9 @@
-# Functions overview:
-#  1. get_category() returns the category of the puzzle
-#  2. get_puzzle() prints the category of the puzzle and returns the answer to the puzzle
+*remember to sumbit a pull request whenever you edit or create a code for any function
+*do not edit someone else's code without permission
+
+Functions overview:
+    1. get_category() returns the category of the puzzle
+    2. get_puzzle() prints the category of the puzzle and returns the answer to the puzzle (aka selected_puzzle)
 
 
 # done by Mr Wang
