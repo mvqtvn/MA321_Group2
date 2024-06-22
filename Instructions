@@ -29,33 +29,44 @@ Timeline:
 
 Wheel of Fortune Intructions:
 
-  At the start of the game, the game engine should tell the user how many characters the secret word
-  has. Display this by a sequence of dashes. 
-  
-  The amount of money at the start of the game is $0.
-  
-  In each turn, the player has the option to:
-  Option 1: Spin the wheel and guess a consonant
-  Option 2: Buy a vowel (if the player has enough money)
-  Option 3: Solve the puzzle (guessing the entire word)
-  
-  If the user choose the option to spin the wheel, the spin result should be generated. 
-  The spin result is a sum of money (randomised, from a range of $100 - $1000 with an interval of $50) that will be added 
-  to the player's total if the letter is in the puzzle answer.
-  If the wheel lands on "BANKRUPT", the total sum of money the player has drops to $0. 
-  
-  If the user choose to buy a vowel, $250 will be deducted from the user’s score and if the vowel is in the puzzle, 
-  display all instances of the vowel. 
-  If the vowel is not in the puzzle, inform the user so.
+  ***For this game, the player loses the game if he/she is still not able to solve the puzzle correctly after
+     the 10th turn; the player wins the game if he/she can solve the puzzle before the end of the 10th turn.
 
-  If the user choose the option to solve the puzzle, The guess is considered “valid” only if all the
-  conditions are satisfied:
-  Condition 1: The guess is a string of the same length as the puzzle.
-  Condition 2: The player has not guessed this word in the previous turns.
-  Note that user is allowed to guess a word that is not in English (e.g. ABCDE).
-  The player should be prompted to start the next turn if the guess is invalid.
+  (function to set the initial values at the start of the game)
+      At the start of the game, the game engine should tell the user how many characters the secret word
+      has. Display this by a sequence of dashes. 
+      
+      The amount of money at the start of the game is $0.
 
-  For this game, the player loses the game if he/she is still not able to solve the puzzle correctly after
-  the 10th turn; the player wins the game if he/she can solve the puzzle before the end of the 10th turn.\
+  (function to display information on the screen in each turn,
+  function to prompt the player to choose an option until the puzzle is solved)
+      In each turn, the player has the option to:
+      Option 1: Spin the wheel and guess a consonant
+      Option 2: Buy a vowel (if the player has enough money)
+      Option 3: Solve the puzzle (guessing the entire word)
+
+  (function to get the result of the spin of the wheel)
+      If the user choose the option to spin the wheel, the spin result should be generated. 
+      The spin result is a sum of money (randomised, from a range of $100 - $1000 with an interval of $50).
+
+  (function to process the guess of consonant that will be added,
+  function to prompt the player to choose an option until the puzzle is solved)
+      The result of the wheel spin, a sum of money, will be added to the player's total if the letter guessed is in the puzzle answer.
+      If the wheel lands on "BANKRUPT", the total sum of money the player has drops to $0. 
+
+  (function to process the buying and guessing of vowel,
+  function to prompt the player to choose an option until the puzzle is solved)
+      If the user choose to buy a vowel, $250 will be deducted from the user’s score and if the vowel is in the puzzle, 
+      display all instances of the vowel. 
+      If the vowel is not in the puzzle, inform the user so.
+
+  (function to test whether the user solve the puzzle correctly)
+      If the user choose the option to solve the puzzle, The guess is considered “valid” only if all the
+      conditions are satisfied:
+      Condition 1: The guess is a string of the same length as the puzzle.
+      Condition 2: The player has not guessed this word in the previous turns.
+      Note that user is allowed to guess a word that is not in English (e.g. ABCDE).
+      The player should be prompted to start the next turn if the guess is invalid.
+    
 
   
