@@ -1,1 +1,61 @@
+Hi everyone, it's Maggie :)
+Please read these instuctions before you start writing the code for our project, thank you!
 
+If you are unclear how the game works, do clarify with me in our groupchat or read the instructions I have written below
+after the timeline.
+Since the instructions are based on my understanding of the game, do let me know if you would like to change how our game works.
+
+Instructions:
+
+  I suggest everyone first write your code into the wheel of fortune templete in glassroom.
+  When you finish writing the code (ensuring that it works), copy it into the 'functions' file.
+  Before you commit the changes, ensure you click the option to create a new branch for the commit and start a pull request.
+  This way, the group can review your changes and discuss whether to integrate it into our final code.
+  *Also start a pull request when you are are editing a previous code you have written.
+
+  If you have spotten mistakes in another group member's code (eg, it does not align with the game instructions), do not
+  immediately change it but inform the group in the groupchat so we can decide together how to fix it.
+
+  Refer to the functions file to see what function you are supposed to do. If you are unclear what the function is meant to do,
+  ask me in the gc. If you are unable to complete the code, you may request to do another one if someone else is willing to swap with you.
+
+Timeline:
+
+  I hope we can writing each function by Sunday and finshing editing it on Monday. I will combine the functions together to form
+  the main body on Tuesday. I may get you guys to change some parts of your code on tuesday as well, so free up your schedule.
+  I only expect everyone to complete the code by Monday. (except joel cuz he has to go to school, but please try and finish your part)
+  I won't be free on Monday morning, so I hope when I come back in the afternoon, you guys have written most of the code.
+  Good luck everyone!
+
+Wheel of Fortune Intructions:
+
+  At the start of the game, the game engine should tell the user how many characters the secret word
+  has. Display this by a sequence of dashes. 
+  
+  The amount of money at the start of the game is $0.
+  
+  In each turn, the player has the option to:
+  Option 1: Spin the wheel and guess a consonant
+  Option 2: Buy a vowel (if the player has enough money)
+  Option 3: Solve the puzzle (guessing the entire word)
+  
+  If the user choose the option to spin the wheel, the spin result should be generated. 
+  The spin result is a sum of money (randomised, from a range of $100 - $1000 with an interval of $50) that will be added 
+  to the player's total if the letter is in the puzzle answer.
+  If the wheel lands on "BANKRUPT", the total sum of money the player has drops to $0. 
+  
+  If the user choose to buy a vowel, $250 will be deducted from the user’s score and if the vowel is in the puzzle, 
+  display all instances of the vowel. 
+  If the vowel is not in the puzzle, inform the user so.
+
+  If the user choose the option to solve the puzzle, The guess is considered “valid” only if all the
+  conditions are satisfied:
+  Condition 1: The guess is a string of the same length as the puzzle.
+  Condition 2: The player has not guessed this word in the previous turns.
+  Note that user is allowed to guess a word that is not in English (e.g. ABCDE).
+  The player should be prompted to start the next turn if the guess is invalid.
+
+  For this game, the player loses the game if he/she is still not able to solve the puzzle correctly after
+  the 10th turn; the player wins the game if he/she can solve the puzzle before the end of the 10th turn.\
+
+  
