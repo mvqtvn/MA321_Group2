@@ -6,7 +6,7 @@ Functions overview:
     2. get_puzzle() prints the category of the puzzle and returns the answer to the puzzle (aka selected_puzzle)
 
 
-# done by Mr Wang
+1) done by Mr Wang
 
 def get_category():
     from os import listdir
@@ -17,7 +17,7 @@ def get_category():
     return choice(categories)
 category = get_category()
 
-# done by Mr Wang
+2) done by Mr Wang
 
 def get_puzzle():
     from random import choice
@@ -27,7 +27,7 @@ def get_puzzle():
     return selected_puzzle
 secret_puzzle = get_puzzle()
 
-# function to set the initial values at the start of the game done by Maggie
+3) function to set the initial values at the start of the game done by Maggie
 
 def initial_values():
     money = 0
@@ -35,26 +35,26 @@ def initial_values():
     no_letters = len(secret_puzzle)
     puzzle = ("_ ") * no_letters
 
-# function to display information on the screen in each turn done by Maggie (total money after each turn and consonants in the word)
+4) function to display information on the screen in each turn done by Maggie (total money after each turn and consonants in the word)
 
 def display():
     message = f"Category: {category} \nTurn number: {turn_no}out of 10 \nMoney: ${money} \nPuzzle: {puzzle}"
     return message
 
-# function to prompt the player to choose an option until the puzzle is solved done by Geethika
+5) function to prompt the player to choose an option until the puzzle is solved done by Geethika
 
 def continue_game():
 
-# function to get the result of the spin of the wheel done by Geethika
+6) function to get the result of the spin of the wheel done by Geethika
 
 def spin():
 
-# function to process the guess of consonant done by Yunxin
+7) function to process the guess of consonant done by Yunxin
 
 def consonant():
-    guess=input("guess a consonant: ).upper()
+    guess=input("guess a consonant: ").upper()
     if guess in "AEIOU":
-        print("INVALID, GUESS A CONSONANT)
+        print("GUESS A CONSONANT")
         return 0
     if len(guess) !=1:
         print("INVALID, ENTER A SINGLE CONSONANT)
@@ -70,11 +70,26 @@ def consonant():
         print(f"The consonant '{guess}' is not in the puzzle.")
         return 0
 
-# function to process the buying and guessing of vowel done by Maggie
+8) function to process the buying and guessing of vowel done by Maggie
 
 def vowel():
+    while money >= 250:
+        money -= 250
+        vowel_guess = input(str("Choose a vowel to guess: "))
+        if vowel_guess in "AEIOU":
+            for i in range(len(puzzle_list)):
+                if puzzle_list[i].upper() != vowel_guess:
+                    puzzle_list[i] = "_ "
+            
+            secret_puzzle = ''.join(puzzle_list)
+        else:
+            print("Key in a vowel")
+            
+    else:
+        print("You do not have enough money to buy a vowel")
+        continue_game()
 
-# function to test whether the user solve the puzzle correctly done by Joel
+9) function to test whether the user solve the puzzle correctly done by Joel
 
 def check_guess():
 
