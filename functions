@@ -27,7 +27,7 @@ def get_puzzle():
     return selected_puzzle
 secret_puzzle = get_puzzle()
 
-# function to set the initial values at the start of the game done by Yunxin
+# function to set the initial values at the start of the game done by Maggie
 
 def initial_values():
     money = 0
