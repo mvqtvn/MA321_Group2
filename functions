@@ -53,11 +53,11 @@ def spin():
 
 def consonant():
 
-# function to process the buying and guessing of vowel done by Joel
+# function to process the buying and guessing of vowel done by Maggie
 
 def vowel():
 
-# function to test whether the user solve the puzzle correctly done by Maggie
+# function to test whether the user solve the puzzle correctly done by Joel
 
 def check_guess():
 
