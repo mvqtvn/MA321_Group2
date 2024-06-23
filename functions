@@ -30,6 +30,10 @@ secret_puzzle = get_puzzle()
 # function to set the initial values at the start of the game done by Yunxin
 
 def initial_values():
+    money = 0
+    turn_no = 0
+    no_letters = len(secret_puzzle)
+    puzzle = ("_ ") * no_letters
 
 # function to display information on the screen in each turn done by Joel (total money after each turn and consonants in the word)
 
