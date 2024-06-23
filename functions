@@ -41,7 +41,7 @@ def continue_game():
 
 # function to get the result of the spin of the wheel done by Geethika
 
-def spin_result():
+def spin():
 
 # function to process the guess of consonant done by Yunxin
 
