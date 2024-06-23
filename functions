@@ -52,6 +52,23 @@ def spin():
 # function to process the guess of consonant done by Yunxin
 
 def consonant():
+    guess=input("guess a consonant: ).upper()
+    if guess in "AEIOU":
+        print("INVALID, GUESS A CONSONANT)
+        return 0
+    if len(guess) !=1:
+        print("INVALID, ENTER A SINGLE CONSONANT)
+        return 0
+    if guess in secret_puzzle:
+        count=secret_puzzle.count(guess)
+        for i, letter in enumerate(secret_puzzle):
+            if letter == guess:
+                puzzle[i*2] = guess
+        print(f"The consonant '{guess}' is in the puzzle {count} time(s).")
+        return count
+    else:
+        print(f"The consonant '{guess}' is not in the puzzle.")
+        return 0
 
 # function to process the buying and guessing of vowel done by Maggie
 
