@@ -1,1 +1,31 @@
+x = input(str("State Player Name: "))
 
+turn_no = 0
+money = 0
+
+answer_list = list(secret_puzzle)
+
+def wheel_of_fortune(x):
+    print(f"Hello {x}, welcome to Wheel of Fortune! Try and guess the word before you run out of guesses. \n{display()}")
+
+    while continue_game(): #continue_game should count the number of tries the player has
+
+        choice = input(str("Choose to spin the wheel, buy a vowelor solve the puzzle by inputting 'spin', 'vowel' or 'solve' respectively."))
+
+        if choice == "spin":
+            spin_result = spin()
+            if spin_result = "Bankrupt":
+                money = 0
+            else:
+                consonant_guess = input(str("Guess a consonant that could be in the puzzle: "))
+                if consonant in answer_list:
+                    counter = 0
+                    while counter <= len(answer_list):
+                        if answer_list[counter] != consonant_guess:
+                            answer_list = answer_list.pop[counter]
+                            new_list = answer_list.append[counter]
+                        counter += 1
+                    
+                    print(f"The letter {consonant_guess} is in the puzzle. \nNew puzzle: {''.join(new_list)}.")
+        
+        if choice == "vowel":
