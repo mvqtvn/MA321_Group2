@@ -31,28 +31,28 @@ secret_puzzle = get_puzzle()
 
 def initial_values():
 
-# function to display information on the screen in each turn done by Joel
+# function to display information on the screen in each turn done by Joel (total money after each turn and consonants in the word)
 
 def display():
 
 # function to prompt the player to choose an option until the puzzle is solved done by Geethika
 
-
+def continue_game():
 
 # function to get the result of the spin of the wheel done by Geethika
 
-
+def spin_result():
 
 # function to process the guess of consonant done by Yunxin
 
-
+def consonant():
 
 # function to process the buying and guessing of vowel done by Joel
 
-
+def vowel():
 
 # function to test whether the user solve the puzzle correctly done by Maggie
 
-
+def check_guess():
 
 
