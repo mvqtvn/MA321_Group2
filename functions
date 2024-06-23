@@ -35,9 +35,11 @@ def initial_values():
     no_letters = len(secret_puzzle)
     puzzle = ("_ ") * no_letters
 
-# function to display information on the screen in each turn done by Joel (total money after each turn and consonants in the word)
+# function to display information on the screen in each turn done by Maggie (total money after each turn and consonants in the word)
 
 def display():
+    message = f"Category: {category} \nTurn number: {turn_no}out of 10 \nMoney: ${money} \nPuzzle: {puzzle}"
+    return message
 
 # function to prompt the player to choose an option until the puzzle is solved done by Geethika
 
