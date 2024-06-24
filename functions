@@ -44,7 +44,9 @@ def display():
 
 5) function to prompt the player to choose an option until the puzzle is solved done by Geethika
 
-def continue_game():
+def continue_game(option):
+    while option not in secret_puzzle:
+        option = input('CHOOSE ANOTHER OPTION')
     
 
 6) function to get the result of the spin of the wheel done by Maggie
