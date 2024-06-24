@@ -48,9 +48,9 @@ def continue_game():
 
 6) function to get the result of the spin of the wheel done by Maggie
 
+import random
 def spin():
-    results_list = list(range(50, 950, 50)
-    import random
+    results_list = list(range(50, 1050, 50)
     return random.choice(results_list)
 
 7) function to process the guess of consonant done by Yunxin
