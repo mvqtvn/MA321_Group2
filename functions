@@ -34,6 +34,7 @@ def initial_values():
     turn_no = 0
     no_letters = len(secret_puzzle)
     puzzle = ("_ ") * no_letters
+    puzzle_list = list(puzzle)
 
 4) function to display information on the screen in each turn done by Maggie (total money after each turn and consonants in the word)
 
@@ -45,20 +46,21 @@ def display():
 
 def continue_game():
 
-6) function to get the result of the spin of the wheel done by Geethika
+6) function to get the result of the spin of the wheel done by Maggie
 
 def spin():
+    results_list = list(range(50, 950, 50)
+    import random
+    return random.choice(results_list)
 
 7) function to process the guess of consonant done by Yunxin
 
 def consonant():
-    guess=input("guess a consonant: ").upper()
+    guess=input("Guess a consonant: ").upper()
     if guess in "AEIOU":
         print("GUESS A CONSONANT")
-        return 0
     if len(guess) !=1:
         print("INVALID, ENTER A SINGLE CONSONANT)
-        return 0
     if guess in secret_puzzle:
         count=secret_puzzle.count(guess)
         for i, letter in enumerate(secret_puzzle):
