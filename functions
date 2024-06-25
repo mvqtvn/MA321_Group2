@@ -8,6 +8,17 @@ Functions overview:
 
 1) done by Mr Wang
 
+def get_puzzle():
+    from random import choice
+    category = get_category()
+    print(category)
+    with open(f'./categories/{category}.csv', 'r') as file_handler:
+        avail_puzzles = [i.strip(',\n') for i in file_handler.readlines()]
+    selected_puzzle = choice(avail_puzzles)
+    return selected_puzzle
+
+2) done by Mr Wang
+
 def get_category():
     from os import listdir
     from os.path import isfile, join
@@ -15,17 +26,9 @@ def get_category():
     mypath = './categories'
     categories = [f.strip('.csv') for f in listdir(mypath) if isfile(join(mypath, f))]
     return choice(categories)
-category = get_category()
 
-2) done by Mr Wang
-
-def get_puzzle():
-    from random import choice
-    with open(f'./categories/{category}.csv', 'r') as file_handler:
-        avail_puzzles = [i.strip(',\n') for i in file_handler.readlines()]
-    selected_puzzle = choice(avail_puzzles)
-    return selected_puzzle
 secret_puzzle = get_puzzle()
+print(secret_puzzle)
 
 3) function to set the initial values at the start of the game done by Maggie
 
