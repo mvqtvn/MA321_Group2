@@ -20,20 +20,30 @@ def get_category():
 
 3) function to set the initial values at the start of the game done by Maggie
 
+
 def initialize_values():
     money = 0
     turn_number = 0
+
     category_puzzle = get_category()
     secret_puzzle = get_puzzle()
+
     secretpuzzle_list = list(secret_puzzle)
+
+    guessed_letters_list = []
     puzzle_list = []
+
+
     for char in secretpuzzle_list:
         if char == "-":
             puzzle_list.append("-")
         else:
             puzzle_list.append("_")
-    return money, turn_number, category_puzzle, secret_puzzle, puzzle_list
-money, turn_number, category, secret_puzzle, puzzle_list= initialize_values()
+
+
+    return money, turn_number, category_puzzle, secret_puzzle, secretpuzzle_list, puzzle_list, guessed_letters_list
+
+money, turn_number, category, secret_puzzle, secretpuzzle_list, puzzle_list, guessed_letters_list= initialize_values()
 
 
 4) function to display information on the screen in each turn done by Maggie (total money after each turn and consonants in the word)
@@ -53,8 +63,7 @@ def continue_game(option):
 
 MAGGIE:
 def continue_game(n):
-    if n > 10:
-        sys.exit()
+
     
 
 6) function to get the result of the spin of the wheel done by Maggie
