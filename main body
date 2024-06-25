@@ -3,7 +3,7 @@ x = input(str("State Player Name: "))
 turn_no = 0
 money = 0
 
-answer_list = list(secret_puzzle)
+puzzle_list = list(secret_puzzle)
 
 def wheel_of_fortune(x):
     print(f"Hello {x}, welcome to Wheel of Fortune! Try and guess the word before you run out of guesses. \n{display()}")
