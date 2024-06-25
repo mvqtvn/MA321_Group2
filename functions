@@ -114,6 +114,13 @@ def vowel():
 
 9) function to test whether the user solve the puzzle correctly done by Joel
 
-def check_guess():
+def check_guess(secret_puzzle, puzzle_list):
+    guessed_puzzle = input("Enter your guess for the entire puzzle: ").upper()
+    if guessed_puzzle == secret_puzzle:
+        print("Congratulations! You solved the puzzle!")
+        return True
+    else:
+        print("Sorry, that's not correct.")
+        return False
 
 
